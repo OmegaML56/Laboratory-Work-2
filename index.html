@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- agregar imagen al programa -->
+        <link rel ="icon" type="image/x-icon" href="img.jpg">
+        <!-- agregar una archivo CSS al programa -->
+        <link rel="stylesheet" href="style.css">
+        <title>Document's Title</title>
+    </head>
+    <body>
+            <!-- Titulo y subtitulo -->
+            <div>
+                <h1>Este es un titulo</h1>
+                <p>Este es un parrafo</p>
+            </div>
+        <ul>
+            <a href="index.html">Referencia a index</a>
+            <a href="blog.html">Referencia a blog</a>
+        
+        </ul>
+        <!-- imagen -->
+        <p>imagen</p>
+        <img src="img.jpg"
+        alt="imagen"
+        width="100"
+        height="100">
+        <!-- referencia a un link: target="_blank" abre una ventana nueva -->
+        <a href="https://www.google.com" target="_blank">Visita este sitio</a>
+
+        <!-- referencia a un link con imagen -->
+        <a href="https://www.google.com" target="_blank">
+            <p>imagen</p>
+            <img src="img.jpg"
+            alt="imagen"
+            width="100"
+            height="100">
+        </a>
+        <!-- hr y br son etiquetas de formato, hr es una linea horizontal y br es un salto de linea -->
+        <hr>
+        <br>
+        <!-- codigos de entidad, entity codes, son caracteres especiales 
+        que se representan con un código, por ejemplo &lt; representa el símbolo < 
+        y &gt; representa el símbolo > -->
+        <!-- span -->
+        <div>Este es un div <span>Este es un segundo div</span></div>
+
+        <!-- span con referencia -->
+        <div>Este es un div <span><a href="https://www.google.com" target="_blank">Este es un segundo div</a></span></div>
+        <!-- semantica no especifica, es decir, no tiene un significado específico, se utiliza para agrupar elementos 
+        y aplicar estilos o scripts a ellos. -->
+        <div>este es un elemento no semantico <span>Este es un elemento no semantico</span></div>
+        <!-- tienen varios usos -->
+
+        <!-- tablas -->
+        <table>
+            <!-- columna de la tabla: table row -->
+            <tr>
+                <th>Empresa</th>
+                <th>Contacto</th>
+                <th>Lugar</th>
+            </tr>
+            <!-- elementos de la tabla td: -->
+            <tr>
+                <td>epmresa 1</td>
+                <td>mail@vudera.com</td>
+                <td>Madrid</td>
+            </tr>
+            <tr>
+                <td>empresa 2</td>
+                <td>mail@vudera.com</td>
+                <td>Madrid</td>
+            </tr>
+        </table>
+        <!-- Formularios -->
+        <form>
+            <p>texto del formulario</p>
+            <!-- inputs -->
+            <input type="text">
+            <input type="date">
+            <!-- diseñado para verificar el @ -->
+            <input type="email">
+            <!-- diseñado para verificar el .com -->
+            <input type="url">
+            <!-- diseñado para enviar archivos -->
+            <input type="file">
+            <!-- input escondido -->
+            <input type="hidden">
+            <!-- solo recibe numeros  -->
+            <input type="number">
+            <!-- esconde el input el escrbir -->
+            <input type="password">
+            <!-- es una barra de progreso -->
+            <input type="range">
+            <!-- input con texto placeholder, placeholder es
+            el texto que aparece dentro del input antes de que el usuario escriba -->
+            <input type="text" placeholder="Ingrese su texto aquí">
+            <!-- Strutura base de una contraseña con validacion de contraseña, 
+            el required hace que el campo sea obligatorio, es decir, 
+            el usuario no puede enviar el formulario sin llenar ese campo. -->
+            <input type="password" 
+                placeholder="Ingrese su contraseña aquí"
+                required> <!-- required hace que el campo sea obligatorio -->
+            <input type="repeat-password" 
+                placeholder="Verifique su contraseña aquí" 
+                required> 
+            <!-- botones para enviar la informacion del formulario -->
+            <button type="submit">Enviar</button>
+        </form>
+
+        <br/>
+
+        <form>
+            <!-- checkbox -->
+            <input
+                type="checkbox" name="ejemplo"> opcion 1 
+            
+            <input
+                type="checkbox" name="ejemplo" required> opcion 2
+            <button type="submit">Enviar</button>
+        </form>
+        <form>
+            <!-- radio structure -->
+            <label>Rojo</label>
+            <input type="radio" name="color"/>
+            <label>Azul</label>
+            <input type="radio" name="color"/>
+        </form>
+        <form>
+            <!-- Area de texto, para escribir un texto largo, 
+            como un comentario o una descripcion,
+            se puede redimensionar con el mouse.  -->
+            <textarea name="comentario" rows="10" cols="19"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+
+</html>
